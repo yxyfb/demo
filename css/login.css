@@ -1,0 +1,145 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  line-height: 1;
+  color: #000;
+}
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../image/loginBgBig.png) center no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+.content:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.content .login-box {
+  background-color: #ffffff;
+  padding: 29px 24px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 100px;
+  width: 400px;
+  box-sizing: border-box;
+}
+.content .login-box.hidden {
+  display: none;
+}
+.content .login-box .login-title {
+  font-size: 28px;
+  color: rgba(157, 114, 26, 0.8);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d9cbc0;
+}
+.content .login-box .login-title a {
+  position: relative;
+  right: 15px;
+  top: 10px;
+  font-size: 14px;
+  float: right;
+  color: rgba(157, 114, 26, 0.8);
+}
+.content .login-box .login-form {
+  padding-bottom: 16px;
+}
+.content .login-box .login-form .input-group {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.content .login-box .login-form .input-group input {
+  height: 40px;
+  width: 100%;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #d9cbc0;
+}
+.content .login-box .login-form .input-group input#tel {
+  width: calc((100% - 100px));
+}
+.content .login-box .login-form .input-group button {
+  background-color: rgba(195, 167, 145, 0.8);
+  border: none;
+  width: 90px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+.content .login-box .login-form .input-group .error-message {
+  text-align: left;
+  color: red;
+}
+.content .login-box .login-form .forget-pwd-btn {
+  width: 100%;
+  padding-bottom: 40px;
+  text-align: left;
+  font-size: 14px;
+  color: rgba(157, 114, 26, 0.8);
+  cursor: pointer;
+}
+.content .login-box .login-form .btn {
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  background-color: #d6b26b;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+  box-sizing: border-box;
+}
+.content .login-box .go-register {
+  font-size: 14px;
+}
+.content .mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.content .mask .code-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (max-width: 767px) {
+  .content {
+    background: url(../image/loginRegistBgSmall.jpg) center no-repeat;
+    background-size: cover;
+  }
+  .content .login-box {
+    width: 90%;
+    margin-right: 5%;
+  }
+}

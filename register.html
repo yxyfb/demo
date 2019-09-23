@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>龙门国医</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+  <div class="content register-content">
+    <div class="register-box">
+      <h3 class="register-title">免费注册<a href="./index.html">返回首页</a></h3>
+      <form action="post" class='register-form'>
+        <div class="input-group">
+          <input type="text" name="text" id="text" placeholder="昵称" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group clearfix">
+          <input type="tel" name="tel" id="tel" class='fl' placeholder="手机号" autocomplete="off" required>
+          <button class='fr getCode'>获取验证码</button>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="text" name="code" id="code" placeholder="验证码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" name="onepwd" id="onepwd" placeholder="密码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" name="twopwd" id="twopwd" placeholder="确认密码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <button class='btn'>确认</button>
+      </form>
+      <a href="./login.html" class='go-register'>已有账号，马上登录</a>
+    </div>
+
+    <div class="mask">
+      <div class="code-box"></div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/register.js"></script>
+
+</html>

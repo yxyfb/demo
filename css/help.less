@@ -1,0 +1,177 @@
+header {
+  height: 632px;
+  background: url(../image/help-banner.png) center no-repeat;
+  background-size: cover;
+
+  h1 {
+    line-height: 79px;
+    padding-top: 164px;
+    font-size: 60px;
+    color: #9d711a;
+  }
+
+  p {
+    margin-top: 68px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #9d711a;
+  }
+}
+
+.helpList {
+  padding-top: 108px;
+  padding-bottom: 42px;
+
+  .list {
+    margin-bottom: 40px;
+    background: #f9f6f4;
+    height: 300px;
+
+    .list-num-box {
+      width: 20%;
+      margin-top: 50px;
+      box-sizing: border-box;
+
+      span {
+        display: block;
+        width: 83px;
+        height: 48px;
+        margin-left: 86px;
+        background: url(../image/help.png) no-repeat;
+      }
+    }
+
+    .list-info-box {
+      width: 80%;
+      padding-right: 10px;
+      box-sizing: border-box;
+      padding-top: 50px;
+
+      h2 {
+        padding-left: 18px;
+        line-height: 40px;
+        font-size: 30px;
+        color: rgba(157, 113, 26, 0.9);
+      }
+
+      ul {
+        margin-top: 18px;
+
+        li {
+          position: relative;
+          padding-left: 30px;
+          color: #9d711a;
+          font-size: 16px;
+          line-height: 40px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0px;
+            width: 10px;
+            height: 10px;
+            background: #e3d6cc;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(1) span {
+      width: 64px;
+      background-position: -84px 0px !important;
+    }
+
+    &:nth-of-type(2) span {
+      background-position: -148px 0px !important;
+    }
+
+    &:nth-of-type(3) span {
+      background-position: 0px -49px !important;
+    }
+
+    &:nth-of-type(4) span {
+      background-position: 0px 0px !important;
+    }
+
+    &:nth-of-type(5) span {
+      background-position: 0px -97px !important;
+    }
+
+    &:nth-of-type(6) span {
+      background-position: -148px -48px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .helpList {
+
+    .list {
+      .list-num-box {
+        span {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 250px;
+
+    h1 {
+      padding-top: 40px;
+      line-height: 75px;
+      font-size: 26px;
+    }
+
+    p {
+      margin-top: 20px;
+      line-height: 20px;
+      font-size: 12px;
+    }
+  }
+
+  .helpList {
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    .list {
+      margin-bottom: 20px;
+      height: auto;
+      padding: 10px;
+      box-sizing: border-box;
+
+      .list-num-box {
+        display: none;
+      }
+
+      .list-info-box {
+        width: 100%;
+        padding-top: 10px;
+
+        h2 {
+          line-height: 21px;
+          font-size: 16px;
+        }
+
+        ul {
+          margin-top: 10px;
+
+          li {
+            padding-left: 20px;
+            font-size: 12px;
+            line-height: 20px;
+
+            &:after {
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

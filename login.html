@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>龙门国医</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <div class="content login-content">
+    <div class="login-box" id='login'>
+      <h3 class="login-title">登录<a href="./index.html">返回首页</a></h3>
+      <form action="post" class='login-form' id='login-form'>
+        <div class="input-group">
+          <input type="tel" name="phone" id="phone" placeholder="手机号" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" name="pwd" id="pwd" placeholder="密码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="forget-pwd-btn">忘记密码？</div>
+        <input type='submit' class='btn' value='登录' id='submit'>
+      </form>
+      <a href="./register.html" class='go-register'>还没有账号，马上注册</a>
+    </div>
+
+    <div class="login-box hidden" id='forget'>
+      <h3 class="login-title">忘记密码<a href="#" class='back'>返回登录</a></h3>
+      <form action="post" class=' login-form' id='login-form'>
+        <div class="input-group clearfix">
+          <input type="tel" name="tel" id="tel" class='fl tel' placeholder="手机号" autocomplete="off" required>
+          <button class='fr getCode'>获取验证码</button>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="text" name="code" id="code" placeholder="验证码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" name="pwd" id="onepwd" placeholder="密码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" name="pwd" id="twopwd" placeholder="确认密码" autocomplete="off" required>
+          <div class="error-message"></div>
+        </div>
+        <button id='btn' class='btn'>确认</button>
+      </form>
+    </div>
+
+    <div class="mask">
+      <div class="code-box"></div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/login.js"></script>
+
+</html>
